@@ -27,7 +27,7 @@ export default class RecipeDetails extends Component {
 
   async componentDidMount() {
     const id = this.props.id;
-    const url = `https://www.food2fork.com/api/get?key=368416e6148e654eff591444cf23f22e&rId=${id}`;
+    const url = `https://www.food2fork.com/api/get?key=__YOUR_API_KEY__&rId=${id}`;
     try {
       const data = await fetch(url);
       const jsonData = await data.json();
